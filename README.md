@@ -14,6 +14,10 @@
     - kubectl create -f https://raw.githubusercontent.com/vsvale/Kubernetes-for-Developers-Core-Concepts/main/nginx.pod.yml --dry-run --validate=true --save-config
 - kubectl apply resource: create a resource declaratively
     - kubectl create -f https://raw.githubusercontent.com/vsvale/Kubernetes-for-Developers-Core-Concepts/main/nginx.pod.yml
-- kubectl delete deployment name-dployment: delete deployment that manages the Pod
-    kubectl delete -f https://raw.githubusercontent.com/vsvale/Kubernetes-for-Developers-Core-Concepts/main/nginx.pod.yml
+    - kubectl delete -f https://raw.githubusercontent.com/vsvale/Kubernetes-for-Developers-Core-Concepts/main/nginx.pod.yml
 - kubectl describe pod podname: show status and erros in pod
+- Deployment: kubectl appply -f deployment.yaml
+    - kubectl get deployments --show-labels
+    - kubectl get deployments -l app=nginx
+    - kubectl delete deployment name-dployment: delete deployment that manages the Pod
+    - kubectl scale deployment deployment-name --replicas=5

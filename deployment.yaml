@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  labels:
+    app: deploy-nginx
+    tier: frontend
+spec:
+  replicas: 3
+  minReadySeconds: 10
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+      - name: deploy-nginx
+        image: nginx:alpine
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
+        livenessProbe:
+          httpGet:
+            path: /index.html
+            port: 80
+          inititalDelaySeconds: 15
+          timeoutSeconds: 2 #Deafult is 1
+          periodSeconds: 5 #Deafult is 10
+          failureThreshold: 1 #Deafult is 3
+        readinessProbe:
+          httpGet:
+            path: /index.html
+            port: 80
+          inititalDelaySeconds: 2
+          periodSeconds: 5
