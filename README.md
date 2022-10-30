@@ -21,3 +21,9 @@
     - kubectl get deployments -l app=nginx
     - kubectl delete deployment name-dployment: delete deployment that manages the Pod
     - kubectl scale deployment deployment-name --replicas=5
+- Services:
+    - kubectl port-foward pod/my-nginx
+    - kubectl port-foward deployment/my-nginx 8080
+    - kubectl apply -f clusterip-service.yaml
+    - kubectl apply -f nodeport.yaml
+    - kubectl apply -f loadbalancer.yaml
