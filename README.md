@@ -27,3 +27,9 @@
     - kubectl apply -f clusterip-service.yaml
     - kubectl apply -f nodeport.yaml
     - kubectl apply -f loadbalancer.yaml
+- Volumes:
+    - kubectl apply -f mongodb.yaml
+- ConfigMap
+    - kubectl get cm configmap-name -oyaml
+    - kubectl apply -f congifmap.yaml
+    - kubectl create cm app-sttings --from-env-file=settings.config
