@@ -1,4 +1,14 @@
-# Kubernetes-for-Developers-Core-Concepts
+# [Kubernetes for Developers: Core Concepts](https://app.pluralsight.com/library/courses/kubernetes-developers-core-concepts)
+Do you need to learn core Kubernetes concepts in order to get your application containers running in a cluster? This course provides a developer-focused look at key Kubernetes resources, benefits they can provide, and how to get started using them.
+
+## Description
+If you need to get your application containers into Kubernetes, then this course will help jumpstart that process. In this course, Kubernetes for Developers: Core Concepts, you'll be provided a developer-focused look at the role Kubernetes can play in the development workflow. First, you'll learn how to get Kubernetes up and running locally on your machine, interact with Kubernetes using kubectl, and how to use different resources it provides. Next, you'll discover how to deploy containers within Pods, work with deployments, and expose a Pod with a service. Then, you'll explore the role of storage, ConfigMaps, and secrets. Finally, you'll delve into troubleshooting Pods. By the end of this course, you'll understand the role Kubernetes can play in your development workflow and how it can be used to orchestrate and manage your containers. 
+
+## Author
+[Dan Wahlin](https://app.pluralsight.com/profile/author/dan-wahlin)
+
+## Platform
+[Pluralsight](pluralsight.com/)
 
 ## Notes
 - kubectl version: check k8s version
