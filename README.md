@@ -47,4 +47,3 @@ If you need to get your application containers into Kubernetes, then this course
     - kubectl logs -f podname
 - Shell
     - kubectl exec poname -it sh
-- 
