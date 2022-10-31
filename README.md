@@ -33,3 +33,8 @@
     - kubectl get cm configmap-name -oyaml
     - kubectl apply -f congifmap.yaml
     - kubectl create cm app-sttings --from-env-file=settings.config
+- Logs
+    - kubectl logs -f podname
+- Shell
+    - kubectl exec poname -it sh
+- 
